@@ -247,7 +247,7 @@ function handleAnswer(userAnswer) {
     result: correct ? "正解" : "不正解"
   });
   judge.textContent = correct ? "正解！" : "不正解";
-  explanation.textContent = q.explanation;
+  explanation.innerHTML = q.explanation;
   resultBox.classList.remove("hidden");
   scoreEl.textContent = `正解 ${score}`;
   document.querySelectorAll(".answer").forEach(btn => btn.disabled = true);
