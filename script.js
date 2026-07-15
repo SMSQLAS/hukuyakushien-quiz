@@ -1,8 +1,11 @@
 const questions = [
   {
-    "text": `バイアスピリン錠100㎎&nbsp;1錠　1日1回　朝食後&nbsp;&nbsp;7日分<br>
-タケキャブ錠10㎎&nbsp;&nbsp;&nbsp;1錠　1日1回　朝食後&nbsp;&nbsp;7日分<br>
-マグミット錠330㎎&nbsp;&nbsp;&nbsp;2錠　1日2回　朝夕食後&nbsp;7日分<br><br>
+    "text": `<table>
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
   外来服薬支援料2算定可？不可？`,
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
