@@ -180,59 +180,63 @@ const questions = [
   {
     "text": `<strong>問題12</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
     choiceTrue:"算定できる",
     choiceFalse:"算定できない",
     "answer": true,
-    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+    "explanation": "（理由を記入）"
   },
   {
     "text": `<strong>問題13</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
     choiceTrue:"算定できる",
     choiceFalse:"算定できない",
     "answer": true,
-    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+    "explanation": "（理由を記入）"
   },
   {
     "text": `<strong>問題14</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
     choiceTrue:"算定できる",
     choiceFalse:"算定できない",
     "answer": true,
-    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+    "explanation": "（理由を記入）"
   },
   {
     "text": `<strong>問題15</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
+
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
     choiceTrue:"算定できる",
     choiceFalse:"算定できない",
     "answer": true,
-    "explanation": "（服用時点が同じ2剤以上の内服薬）"
-  }
+    "explanation": "（理由を記入）"
+  },
 ];
 
 let current = 0;
