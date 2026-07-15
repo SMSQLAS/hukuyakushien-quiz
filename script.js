@@ -84,16 +84,17 @@ const questions = [
   {
     "text": `<strong>問題6</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>アムロジピン錠5㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>28日分</td></tr>
+<tr><td>ロスバスタチン錠2.5㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td28日分</td></tr>
+<tr><td>トビエース錠4㎎</td><td>2錠</td><td>1日1回</td><td>朝28食後</td><td>7日分</td></tr>
+※トビエースは吸湿性のため、ヒートのままホチキスをした。
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
     choiceTrue:"算定できる",
     choiceFalse:"算定できない",
-    "answer": true,
-    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+    "answer": false,
+    "explanation": "（トビエース錠はPTPシートのままであり、一包化されておらず、ホチキスで添付していても一包化したものとは扱われないため）"
   },
   {
     "text": `<strong>問題7</strong><br><br>
