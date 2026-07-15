@@ -116,58 +116,66 @@ const questions = [
   {
     "text": `<strong>問題8</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>カロナール錠300㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>レバミピド錠100㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>夕食後</td><td>21日分</td></tr>
+<tr><td>アムロジピン錠5㎎</td><td>1錠</td><td>1日1回</td><td>夕食後</td><td>21日分</td></tr>
 </table>
 <br>
-  外来服薬支援料2算定可？不可？`,
-    choiceTrue:"算定できる",
-    choiceFalse:"算定できない",
+  一包化の算定できる日数は？`,
+    choiceTrue:"7日分",
+    choiceFalse:"21日分",
     "answer": true,
-    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+    "explanation": "（朝夕食後の3種類が加算要件を満たすため）"
   },
   {
     "text": `<strong>問題9</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>14日分</td></tr>
+<tr><td>モンテルカスト錠10㎎</td><td>1錠</td><td>1日1回</td><td>就寝前</td><td>7日分</td></tr>
+<tr><td>マイスリー錠5㎎</td><td>0.5錠</td><td>1日1回</td><td>就寝前</td><td>7日分</td></tr>
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
     choiceTrue:"算定できる",
     choiceFalse:"算定できない",
-    "answer": true,
-    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+    "answer": false,
+    "explanation": "（外来服薬支援料2算定不可だが、マイスリー錠5㎎の自家製剤加算が算定可能）"
   },
   {
     "text": `<strong>問題10</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>14日分</td></tr>
+<tr><td>アムロジピン錠5㎎</td><td>1錠</td><td>1日1回</td><td>夕食後</td><td>14日分</td></tr>
+<tr><td>デパス錠1㎎</td><td>0.5錠</td><td>1日1回</td><td>就寝前</td><td>14日分</td></tr>
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
     choiceTrue:"算定できる",
     choiceFalse:"算定できない",
     "answer": true,
-    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+    "explanation": "（マグミット錠、アムロジピン錠で外来服薬支援料2算定可。デパス錠は外来服薬支援料2の算定に関わっていないが、0.5㎎の規格が存在するので自家製剤加算算定不可）"
   },
   {
     "text": `<strong>問題11</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+    <tr><td>Rp1)</td></tr>
+    <tr><td>カロナール錠300㎎</td><td>3錠</td><td>1日3回</td><td>毎食後</td><td>14日分</td></tr>
+    <tr><td>レバミピド錠100㎎</td><td>3錠</td><td>1日3回</td><td>毎食後</td><td>14日分</td></tr>
+    <tr><td>Rp2)</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>14日分</td></tr>
+<tr><td>メコバラミン錠500μg</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>14日分</td></tr>
+<tr><td>Rp3)</td></tr>
+<tr><td>カルボシステインDS</td><td>0.5ｇ</td><td>1日1回</td><td>就寝前</td><td>7日分</td></tr>
+<tr><td>アンブロキソール塩酸塩DS</td><td>0.5ｇ</td><td>1日1回</td><td>就寝前</td><td>7日分</td></tr>
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
     choiceTrue:"算定できる",
     choiceFalse:"算定できない",
     "answer": true,
-    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+    "explanation": "（Rp1 ・Rp2で外来服薬支援料2算定可。Rp3は外来服薬支援料2の算定に関わっていない為、計量混合調剤加算算定可）"
   },
   {
     "text": `<strong>問題12</strong><br><br>
