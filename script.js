@@ -99,16 +99,19 @@ const questions = [
   {
     "text": `<strong>問題7</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>カロナール錠300㎎</td><td>3錠</td><td>1日3回</td><td>毎食後</td><td>7日分</td></tr>
+    <tr><td>レバミピド錠100㎎</td><td>1錠</td><td>1日3回</td><td>毎食後</td><td>7日分</td></tr>
+    <tr><td>メコバラミン錠500μg</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>14日分</td></tr>
     <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
 <tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
-<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+<tr><td>アムロジピン錠5㎎</td><td>1錠</td><td>1日1回</td><td>夕食後</td><td>7日分</td></tr>
 </table>
 <br>
-  外来服薬支援料2算定可？不可？`,
+  一包化の算定できる日数は？`,
     choiceTrue:"7日分",
     choiceFalse:"14日分",
     "answer": true,
-    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+    "explanation": "（7日分だけ外来服薬支援料2の算定基準を満たすため）"
   },
   {
     "text": `<strong>問題8</strong><br><br>
