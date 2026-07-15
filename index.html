@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>外来服薬支援料 ○×クイズ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card" id="startScreen">
+      <p class="badge">外来服薬支援料</p>
+      <h1>○×クイズ</h1>
+      <p class="lead">外来服薬支援料1・2について学ぶクイズです。</p>
+      <button class="primary" id="startBtn">開始する</button>
+    </section>
+
+    <section class="card hidden" id="info1Screen">
+      <p class="badge">説明 1 / 2</p>
+      <h2>外来服薬支援料1</h2>
+      <p class="lead">
+        患者さんが薬を正しく服用できるように、薬剤師が服薬状況を確認し、
+        必要な整理や支援を行った場合に算定するものです。
+      </p>
+      <p class="note">※この説明は仮です。あとで正しい内容に書き換えてください。</p>
+      <button class="primary" id="info1NextBtn">次へ</button>
+    </section>
+
+    <section class="card hidden" id="info2Screen">
+      <p class="badge">説明 2 / 2</p>
+      <h2>外来服薬支援料2</h2>
+      <p class="lead">
+        複数の薬を一包化するなど、服薬管理をしやすくするための支援を行った場合に
+        算定するものです。
+      </p>
+      <p class="note">※この説明は仮です。あとで正しい内容に書き換えてください。</p>
+      <button class="primary" id="quizStartBtn">クイズを始める</button>
+    </section>
+
+    <section class="card hidden" id="quizScreen">
+      <div class="topbar">
+        <span id="progress">1 / 15</span>
+        <span id="score">正解 0</span>
+      </div>
+      <h2 id="questionText"></h2>
+      <div class="actions">
+        <button class="answer yes" data-answer="true">算定できる</button>
+        <button class="answer no" data-answer="false">算定できない</button>
+      </div>
+      <div class="result hidden" id="resultBox">
+        <p id="judge"></p>
+        <p id="explanation"></p>
+        <button class="primary" id="nextBtn">次の問題へ</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="finishScreen">
+      <p class="badge">結果</p>
+      <h2 id="finalScore"></h2>
+      <p id="finalMessage"></p>
+
+      <form id="submitForm" class="submit-form">
+        <label>
+          名前
+          <input id="playerName" name="name" type="text" placeholder="例：山田" required />
+        </label>
+
+        <label>
+          難易度
+          <select id="difficulty" name="difficulty" required>
+            <option value="">選択してください</option>
+            <option value="難しい">難しい</option>
+            <option value="普通">普通</option>
+            <option value="簡単">簡単</option>
+          </select>
+        </label>
+
+        <button class="primary" type="submit">結果を送信する</button>
+      </form>
+
+      <p class="send-status" id="sendStatus"></p>
+      <button class="secondary" id="retryBtn">もう一度する</button>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
