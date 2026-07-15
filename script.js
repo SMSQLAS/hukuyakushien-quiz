@@ -1,9 +1,9 @@
 const questions = [
   {
-    "text": "バイアスピリン錠100㎎　　1錠　1日1回　朝食後　　7日分<br>
-タケキャブ錠10㎎　　　　 1錠　1日1回　朝食後　　7日分<br>
-マグミット錠330㎎　　　　2錠　1日2回　朝夕食後　7日分<br>
-  外来服薬支援料2算定可？不可？
+    "text": `バイアスピリン錠100㎎　1錠　1日1回　朝食後　7日分<br>
+タケキャブ錠10㎎　1錠　1日1回　朝食後　7日分<br>
+マグミット錠330㎎　2錠　1日2回　朝夕食後　7日分<br><br>
+  外来服薬支援料2算定可？不可？`,
 ",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
@@ -107,7 +107,7 @@ function showQuestion() {
   const q = questions[current];
   progress.textContent = `${current + 1} / ${questions.length}`;
   scoreEl.textContent = `正解 ${score}`;
-  questionText.textContent = q.text;
+  questionText.innerHTML = q.text;
   resultBox.classList.add("hidden");
   document.querySelectorAll(".answer").forEach(btn => btn.disabled = false);
 }
