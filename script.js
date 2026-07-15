@@ -8,6 +8,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
@@ -20,6 +22,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（1剤で3種類以上の内服薬）"
   },
@@ -32,6 +36,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": false,
     "explanation": "（同一成分・規格違いのプレドニゾロン錠に関しては1剤1種類扱いとなり、処方全体では1剤2種類のため外来服薬支援料2算定不可）"
   },
@@ -47,6 +53,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": false,
     "explanation": "（それぞれ服用時点が同じ2種類ずつを一包化するだけなので、要件を満たさない）"
   },
@@ -64,6 +72,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": `（2科の処方を合わせて一包化することで、「1剤で3種類以上の内服薬」を一包化するという要件を満たすため、算定可。<br>
 ただし、どちらの処方医からも一包化の指示をもらう必要あり）<br>
@@ -80,6 +90,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
@@ -92,6 +104,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"7日分",
+    choiceFalse:"14日分",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
@@ -104,6 +118,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
@@ -116,6 +132,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
@@ -128,6 +146,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
@@ -140,6 +160,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
@@ -152,6 +174,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
@@ -164,6 +188,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
@@ -176,6 +202,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
@@ -188,6 +216,8 @@ const questions = [
 </table>
 <br>
   外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
     "answer": true,
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   }
@@ -221,6 +251,10 @@ function showQuestion() {
   progress.textContent = `${current + 1} / ${questions.length}`;
   scoreEl.textContent = `正解 ${score}`;
   questionText.innerHTML = q.text;
+  document.querySelector('[data-answer="true"]').textContent =
+  q.choiceTrue || "算定できる"; 
+document.querySelector('[data-answer="false"]').textContent =
+  q.choiceFalse || "算定できない";
   resultBox.classList.add("hidden");
   document.querySelectorAll(".answer").forEach(btn => btn.disabled = false);
 }
