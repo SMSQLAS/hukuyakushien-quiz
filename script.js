@@ -175,7 +175,7 @@ const questions = [
     choiceTrue:"算定できる",
     choiceFalse:"算定できない",
     "answer": true,
-    "explanation": "（Rp1 ・Rp2で外来服薬支援料2算定可。Rp3は外来服薬支援料2の算定に関わっていない為、計量混合調剤加算算定可）"
+    "explanation": "（Rp1 ・Rp2で外来服薬支援料2算定可。<strong>Rp3は外来服薬支援料2の算定に関わっていない為、計量混合調剤加算算定可</strong>）"
   },
   {
     "text": `<strong>問題12</strong><br><br>
