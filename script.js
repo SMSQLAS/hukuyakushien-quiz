@@ -1,7 +1,7 @@
 const questions = [
   {
     "text": `バイアスピリン錠100㎎&nbsp;1錠　1日1回　朝食後&nbsp;&nbsp;7日分<br>
-タケキャブ錠10㎎&nbsp;&nbsp;&nbsp;1錠　1日1回　朝食後&nbsp;7日分<br>
+タケキャブ錠10㎎&nbsp;&nbsp;&nbsp;1錠　1日1回　朝食後&nbsp&nbsp;7日分<br>
 マグミット錠330㎎&nbsp;&nbsp;&nbsp;2錠　1日2回　朝夕食後&nbsp;&nbsp;7日分<br><br>
   外来服薬支援料2算定可？不可？`,
     "answer": true,
