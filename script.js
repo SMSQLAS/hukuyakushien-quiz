@@ -12,74 +12,183 @@ const questions = [
     "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
   {
-    "text": "【仮】外来服薬支援料の問題2（あとで変更してください）",
-    "answer": false,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
-  },
-  {
-    "text": "【仮】外来服薬支援料の問題3（あとで変更してください）",
+    "text": `<strong>問題2</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>カロナール錠300㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>49日分</td></tr>
+<tr><td>レバミピド錠100㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>49日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>49日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
     "answer": true,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
+    "explanation": "（1剤で3種類以上の内服薬）"
   },
   {
-    "text": "【仮】外来服薬支援料の問題4（あとで変更してください）",
+    "text": `<strong>問題3</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>プレドニゾロン錠1㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>プレドニゾロン錠5㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
     "answer": false,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
+    "explanation": "（同一成分・規格違いのプレドニゾロン錠に関しては1剤1種類扱いとなり、処方全体では1剤2種類のため外来服薬支援料2算定不可）"
   },
   {
-    "text": "【仮】外来服薬支援料の問題5（あとで変更してください）",
-    "answer": true,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
-  },
-  {
-    "text": "【仮】外来服薬支援料の問題6（あとで変更してください）",
+    "text": `<strong>問題4</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+    <tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+    <tr><td>カロナール錠300㎎</td><td>1錠</td><td>1日1回</td><td>昼食後</td><td>7日分</td></tr>
+    <tr><td>レバミピド錠100㎎</td><td>1錠</td><td>1日1回</td><td>昼食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>1錠</td><td>1日1回</td><td>夕食後</td><td>7日分</td></tr>
+<tr><td>メコバラミン錠500μg</td><td>1錠</td><td>1日1回</td><td>夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
     "answer": false,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
+    "explanation": "（それぞれ服用時点が同じ2種類ずつを一包化するだけなので、要件を満たさない）"
   },
   {
-    "text": "【仮】外来服薬支援料の問題7（あとで変更してください）",
+    "text": `<strong>問題5</strong><br><br>
+    <strong>【循環器内科】</strong><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+    </table>
+    <br>
+    <strong>【内科】</strong><br>
+     <table style="border-collapse:separate; border-spacing:20px 6px;">
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>アムロジピン錠5㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
     "answer": true,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
+    "explanation": "（2科の処方を合わせて一包化することで、「1剤で3種類以上の内服薬」を一包化するという要件を満たすため、算定可。
+      ただし、どちらの処方医からも一包化の指示をもらう必要あり)<br>
+     「処方」欄の記載内容からは加算理由が不明のときは算定理由が明確となるように記載すること。
+      レセプト適用コード： 異なる保険医の発行する処方箋に係る算定理由（外来服薬支援料２）"
   },
   {
-    "text": "【仮】外来服薬支援料の問題8（あとで変更してください）",
-    "answer": false,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
-  },
-  {
-    "text": "【仮】外来服薬支援料の問題9（あとで変更してください）",
+    "text": `<strong>問題6</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
     "answer": true,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
+    "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
   {
-    "text": "【仮】外来服薬支援料の問題10（あとで変更してください）",
-    "answer": false,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
-  },
-  {
-    "text": "【仮】外来服薬支援料の問題11（あとで変更してください）",
+    "text": `<strong>問題7</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
     "answer": true,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
+    "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
   {
-    "text": "【仮】外来服薬支援料の問題12（あとで変更してください）",
-    "answer": false,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
-  },
-  {
-    "text": "【仮】外来服薬支援料の問題13（あとで変更してください）",
+    "text": `<strong>問題8</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
     "answer": true,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
+    "explanation": "（服用時点が同じ2剤以上の内服薬）"
   },
   {
-    "text": "【仮】外来服薬支援料の問題14（あとで変更してください）",
-    "answer": false,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
-  },
-  {
-    "text": "【仮】外来服薬支援料の問題15（あとで変更してください）",
+    "text": `<strong>問題9</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
     "answer": true,
-    "explanation": "仮の解説です。あとで正しい内容に変更してください。"
+    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+  },
+  {
+    "text": `<strong>問題10</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
+    "answer": true,
+    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+  },
+  {
+    "text": `<strong>問題11</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
+    "answer": true,
+    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+  },
+  {
+    "text": `<strong>問題12</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
+    "answer": true,
+    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+  },
+  {
+    "text": `<strong>問題13</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
+    "answer": true,
+    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+  },
+  {
+    "text": `<strong>問題14</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
+    "answer": true,
+    "explanation": "（服用時点が同じ2剤以上の内服薬）"
+  },
+  {
+    "text": `<strong>問題15</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>7日分</td></tr>
+</table>
+<br>
+  外来服薬支援料2算定可？不可？`,
+    "answer": true,
+    "explanation": "（服用時点が同じ2剤以上の内服薬）"
   }
 ];
 
