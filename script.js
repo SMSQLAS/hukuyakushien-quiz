@@ -86,7 +86,7 @@ const questions = [
     <table style="border-collapse:separate; border-spacing:20px 6px;">
     <tr><td>アムロジピン錠5㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>28日分</td></tr>
 <tr><td>ロスバスタチン錠2.5㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>28日分</td></tr>
-<tr><td>トビエース錠4㎎</td><td>2錠</td><td>1日1回</td><td>朝28食後</td><td>7日分</td></tr>
+<tr><td>トビエース錠4㎎</td><td>2錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
 ※トビエースは吸湿性のため、ヒートのままホチキスをした。
 </table>
 <br>
@@ -177,66 +177,7 @@ const questions = [
     "answer": true,
     "explanation": "（Rp1 ・Rp2で外来服薬支援料2算定可。<strong>Rp3は外来服薬支援料2の算定に関わっていない為、計量混合調剤加算算定可</strong>）"
   },
-  {
-    "text": `<strong>問題12</strong><br><br>
-    <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-
-</table>
-<br>
-  外来服薬支援料2算定可？不可？`,
-    choiceTrue:"算定できる",
-    choiceFalse:"算定できない",
-    "answer": true,
-    "explanation": "（理由を記入）"
-  },
-  {
-    "text": `<strong>問題13</strong><br><br>
-    <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-
-</table>
-<br>
-  外来服薬支援料2算定可？不可？`,
-    choiceTrue:"算定できる",
-    choiceFalse:"算定できない",
-    "answer": true,
-    "explanation": "（理由を記入）"
-  },
-  {
-    "text": `<strong>問題14</strong><br><br>
-    <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-
-</table>
-<br>
-  外来服薬支援料2算定可？不可？`,
-    choiceTrue:"算定できる",
-    choiceFalse:"算定できない",
-    "answer": true,
-    "explanation": "（理由を記入）"
-  },
-  {
-    "text": `<strong>問題15</strong><br><br>
-    <table style="border-collapse:separate; border-spacing:20px 6px;">
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-    <tr><td>○○錠○○㎎</td><td>○錠</td><td>1日○回</td><td>○食後</td><td>○日分</td></tr>
-
-</table>
-<br>
-  外来服薬支援料2算定可？不可？`,
-    choiceTrue:"算定できる",
-    choiceFalse:"算定できない",
-    "answer": true,
-    "explanation": "（理由を記入）"
-  },
+  
 ];
 
 let current = 0;
