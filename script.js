@@ -275,6 +275,7 @@ async function submitResult(event) {
     });
     sendStatus.textContent = "送信しました。スプレッドシートを確認してください。";
     submitForm.querySelector("button").disabled = true;
+    document.getElementById("retryBtn").disabled=false;
   } catch (error) {
     console.error(error);
     sendStatus.textContent = "送信に失敗しました。URLや公開設定を確認してください。";
