@@ -262,10 +262,7 @@ const wrongQuestions = answerLog
     storeName: document.getElementById("storeName").value.trim(),
         name: document.getElementById("playerName").value.trim(),
     difficulty: document.getElementById("difficulty").value,
-   const wrongQuestions = answerLog
-  .filter(item => item.result === "不正解")
-  .map(item => `第${item.no}問`)
-  .join("、");
+  wrongQuestions: wrongQuestions
   };
 
   sendStatus.textContent = "送信中です...";
