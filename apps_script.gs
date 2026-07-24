@@ -3,7 +3,7 @@ function doPost(e) {
     || SpreadsheetApp.getActiveSpreadsheet().insertSheet('服薬回答');
 
   if (sheet.getLastRow() === 0) {
-    sheet.appendRow(['送信日時', 'クイズ名', '名前', '難易度', '得点', '満点', '正答率', '回答詳細']);
+    sheet.appendRow(['送信日時', '名前', '難易度', '得点', '満点', '正答率', '回答詳細']);
   }
 
   const data = JSON.parse(e.postData.contents);
