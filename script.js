@@ -252,17 +252,20 @@ async function submitResult(event) {
     sendStatus.textContent = "config.js にGoogle Apps ScriptのURLを設定してください。";
     return;
   }
-
+const wrongQuestions = answerLog
+  .filter(item => item.result === "不正解")
+  .map(item => `第${item.no}問`)
+  .join("、");
   const payload = {
     timestamp: new Date().toLocaleString("ja-JP"),
     quizTitle:"外来服薬支援料クイズ",
     storeName: document.getElementById("storeName").value.trim(),
         name: document.getElementById("playerName").value.trim(),
     difficulty: document.getElementById("difficulty").value,
-    score,
-    total: questions.length,
-    percent: Math.round((score / questions.length) * 100),
-    answers: JSON.stringify(answerLog)
+   const wrongQuestions = answerLog
+  .filter(item => item.result === "不正解")
+  .map(item => `第${item.no}問`)
+  .join("、");
   };
 
   sendStatus.textContent = "送信中です...";
