@@ -256,14 +256,16 @@ const wrongQuestions = answerLog
   .filter(item => item.result === "不正解")
   .map(item => `第${item.no}問`)
   .join("、");
-  const payload = {
-    timestamp: new Date().toLocaleString("ja-JP"),
-    quizTitle:"外来服薬支援料クイズ",
-    storeName: document.getElementById("storeName").value.trim(),
-        name: document.getElementById("playerName").value.trim(),
-    difficulty: document.getElementById("difficulty").value,
-  wrongQuestions: wrongQuestions
-  };
+
+const payload = {
+  timestamp: new Date().toLocaleString("ja-JP"),
+  quizTitle: "外来服薬支援料クイズ",
+  storeName: document.getElementById("storeName").value.trim(),
+  name: document.getElementById("playerName").value.trim(),
+  difficulty: document.getElementById("difficulty").value,
+  score: `${score}/${questions.length}`,
+  answers: wrongQuestions || "全問正解"
+};
 
   sendStatus.textContent = "送信中です...";
 
