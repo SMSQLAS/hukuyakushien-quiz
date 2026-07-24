@@ -10,7 +10,6 @@ function doPost(e) {
 
   sheet.appendRow([
     data.timestamp || new Date(),
-    data.quizTitle || '外来服薬支援料クイズ',
     data.name || '',
     data.difficulty || '',
     data.score || 0,
