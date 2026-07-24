@@ -255,8 +255,7 @@ async function submitResult(event) {
 
   const payload = {
     timestamp: new Date().toLocaleString("ja-JP"),
-    quizTitle: "外来服薬支援料クイズ",
-    name: document.getElementById("playerName").value.trim(),
+        name: document.getElementById("playerName").value.trim(),
     difficulty: document.getElementById("difficulty").value,
     score,
     total: questions.length,
