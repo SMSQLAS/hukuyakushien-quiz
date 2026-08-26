@@ -177,6 +177,23 @@ const questions = [
     "answer": true,
     "explanation": "（Rp1 ・Rp2で外来服薬支援料2算定可。<strong>Rp3は外来服薬支援料2の算定に関わっていない為、計量混合調剤加算算定可</strong>）"
   },
+  {
+    "text": `<strong>問題12</strong><br><br>
+    <table style="border-collapse:separate; border-spacing:20px 6px;">
+    <tr><td>A病院A先生)</td></tr>
+    <tr><td>カロナール錠300㎎</td><td>3錠</td><td>1日3回</td><td>毎食後</td><td>14日分</td></tr>
+    <tr><td>レバミピド錠100㎎</td><td>3錠</td><td>1日3回</td><td>毎食後</td><td>14日分</td></tr>
+    <tr><td>A病院B先生)</td></tr>
+<tr><td>マグミット錠330㎎</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>14日分</td></tr>
+<tr><td>メコバラミン錠500μg</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>14日分</td></tr>
+</table>
+<br>
+  両処方あわせて一包化指示あり。外来服薬支援料2算定可？不可？`,
+    choiceTrue:"算定できる",
+    choiceFalse:"算定できない",
+    "answer": true,
+    "explanation": "（算定可。<strong>それぞれの処方だけでは一包化の条件を満たしていないが２枚をあわせると条件を満たす場合、それぞれのDrの指示を受ければ算定可能。「処方」欄の記載内容からは加算理由が不明なので、コメントコードが必要（2101異なる保険の発行する処方箋に係る算定理由）</strong>）"
+  },
   
 ];
 
