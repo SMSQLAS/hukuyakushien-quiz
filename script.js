@@ -101,7 +101,7 @@ const questions = [
     "text": `<strong>問題7</strong><br><br>
     <table style="border-collapse:separate; border-spacing:20px 6px;">
     <tr><td>カロナール錠300㎎</td><td>3錠</td><td>1日3回</td><td>毎食後</td><td>7日分</td></tr>
-    <tr><td>レバミピド錠100㎎</td><td>1錠</td><td>1日3回</td><td>毎食後</td><td>7日分</td></tr>
+    <tr><td>レバミピド錠100㎎</td><td>3錠</td><td>1日3回</td><td>毎食後</td><td>7日分</td></tr>
     <tr><td>メコバラミン錠500μg</td><td>2錠</td><td>1日2回</td><td>朝夕食後</td><td>14日分</td></tr>
     <tr><td>バイアスピリン錠100㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
 <tr><td>タケキャブ錠10㎎</td><td>1錠</td><td>1日1回</td><td>朝食後</td><td>7日分</td></tr>
